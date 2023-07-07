@@ -2,6 +2,9 @@ from django.shortcuts import render, get_object_or_404
 from django.http import JsonResponse
 
 from .models import Poll
+from rest_framework_swagger.views import get_swagger_view
+
+schema_view = get_swagger_view(title="Polls API")
 
 
 # Create your views here.
